@@ -1,57 +1,64 @@
 <!doctype html>
-<html class="overflow-auto scrollbar-hide">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="./output.css" rel="stylesheet">
-
 </head>
 
-<body class="bg-gray-950  text-gray-50">
+<body class="bg-gray-950  text-gray-50 m-0 p-0 overflow-x-hidden">
     <div class="relative">
         <div
-            class="absolute top-96 -left-40 w-96 h-72 bg-blue-500 rounded-full mix-blend-normal filter blur-3xl opacity-50 animate-blob ">
-        </div>
-        <div
-            class="absolute top-0 -right-4 w-72 h-72 bg-orange-800 rounded-full mix-blend-normal filter blur-3xl opacity-50 animate-blob animation-delay-2000">
-        </div>
-        <div
-            class="absolute -bottom-60 left-64 w-96 h-96 bg-orange-400 rounded-full mix-blend-normal filter blur-3xl opacity-50 animate-blob animation-delay-4000">
-        </div>
+        class="absolute top-64 left-0 w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-blue-500 rounded-full mix-blend-normal filter blur-3xl opacity-50 animate-blob">
+    </div>
+
+    <!-- Blob 2 -->
+    <div
+        class="absolute top-10 right-0 w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 bg-orange-800 rounded-full mix-blend-normal filter blur-3xl opacity-50 animate-blob animation-delay-2000">
+    </div>
+
+    <!-- Blob 3 -->
+    <div
+        class="absolute bottom-0 left-1/4 w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] bg-orange-400 rounded-full mix-blend-normal filter blur-3xl opacity-50 animate-blob animation-delay-4000">
+    </div>
         <div id="s" class="relative overflow-y-auto h-screen">
             <section class="h-screen flex flex-col">
                 <!-- Header -->
-                <header class="p-4 flex items-start justify-between">
-                    <!-- Logo -->
-                    <div class="flex items-start justify-start px-5">
-                        <img class="max-w-xl h-auto" src="img/Logo.jpg" alt="Logo Graphic Studio">
-                    </div>
-                    <!-- Desktop Menu -->
-                    <nav class="hidden md:flex items-center space-x-6">
-                        <ul class="flex space-x-4 text-base font-medium">
-                            <li><a href="#hero" class="hover:text-orange-400 px-2">Accueil</a></li>
-                            <li><a href="#packs" class="hover:text-orange-400 px-2">Nos Packs</a></li>
-                            <li><a href="#temoignages" class="hover:text-orange-400 px-2">Témoignages</a></li>
-                            <li><a href="#contact" class="hover:text-orange-400 px-2">Contact</a></li>
+                <header class="p-4 flex items-center justify-between">
+                    <div class="flex justify-between items-center w-full p-4">
+                      <!-- Logo  -->
+                      <div class="logo flex items-center">
+                        <img class="w-24 sm:w-32 h-auto" src="img/Logo.jpg" alt="Logo Graphic Studio">
+                      </div>
+                    
+                      <!-- Desktop Menu -->
+                      <nav class="hidden md:flex items-center">
+                        <ul class="flex space-x-6 text-base font-medium">
+                          <li><a href="#hero" class="hover:text-orange-400 px-2 whitespace-nowrap">Accueil</a></li>
+                          <li><a href="#packs" class="hover:text-orange-400 px-2 whitespace-nowrap">Nos Packs</a></li>
+                          <li><a href="#temoignages" class="hover:text-orange-400 px-2 whitespace-nowrap">Témoignages</a></li>
+                          <li><a href="#contact" class="hover:text-orange-400 px-2 whitespace-nowrap">Contact</a></li>
                         </ul>
                         <a href="#contact"
-                            class="bg-blue-500 text-white px-4 py-2 rounded font-normal text-base hover:bg-blue-600">
-                            Demande ton devis
+                          class="ml-6 bg-blue-500 text-white px-4 py-2 rounded font-normal text-base hover:bg-blue-600 whitespace-nowrap">
+                          Demande ton devis
                         </a>
-                    </nav>
-
+                      </nav>
+                    </div>
+                    
+                
                     <!-- Mobile Menu Button -->
                     <div class="md:hidden">
-                        <button id="mobile-menu-button" type="button" class="focus:outline-none">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 8h16M4 16h16"></path>
-                            </svg>
-                        </button>
+                      <button id="mobile-menu-button" type="button" class="focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                             xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 8h16M4 16h16"></path>
+                        </svg>
+                      </button>
                     </div>
-                </header>
+                  </header>
 
                 <!-- Mobile Menu -->
                 <div id="mobile-menu" class="md:hidden hidden px-4">
@@ -129,11 +136,11 @@
                     </div>
                 </div>
             </section>
-            <section id="packs" class="h-auto text-center opacity-100 translate-y-20 transition-all duration-1000 p-6 sm:p-10">
+            <section id="packs" class="h-auto text-center opacity-100 translate-y-2 transition-all duration-1000 p-6 sm:p-10">
                 <h2 class="font-bold text-4xl sm:text-5xl md:text-6xl mb-8">Nos Packs de Services</h2>
                 <div class="flex flex-col lg:flex-row justify-center items-center lg:space-x-8">
                   <div class="flex-1 text-center">
-                    <summary class="mb-4 block"><strong class="text-xl">Pack Églises – "Événements Impactants"</strong></summary>
+                    <summary class="mb-4 block"><strong class="text-4xl font-normal">Pack Églises – "Événements Impactants"</strong></summary>
                     <div class="container mx-auto p-4 flex justify-center items-center">
                       <!-- Sur mobile : 100% de largeur, sur sm : 75%, md : 66%, sur lg et plus : 50% -->
                       <img src="img/Pack 01.jpg" alt="image des Pack church" class="block mx-auto w-full sm:w-3/4 md:w-2/3 lg:w-1/2">
@@ -252,10 +259,10 @@
               
 
             <section id="packs"
-                class="h-auto justify-center items-center text-center  opacity-100 translate-y-20 transition-all duration-1000">
+                class="h-auto justify-center items-center text-center  opacity-100 translate-y-2 transition-all duration-1000">
                 <div class="flex justify-center items-center space-x-8">
                     <div class="flex-1 text-center content-center">
-                        <summary><strong class="text-xl">Pack Jeunes Entrepreneurs – "Identité Pro Clé en Main"</strong>
+                        <summary><strong class="text-4xl font-normal">Pack Jeunes Entrepreneurs – "Identité Pro Clé en Main"</strong>
                         </summary>
                         <div class="container mx-auto p-4 justify-center items-center content-center">
                             <!-- Sur mobile : 100% de largeur, sur sm : 75%, md : 66%, sur lg et plus : 50% -->
@@ -406,10 +413,10 @@
                 </div>
             </section>
             <section id="packs"
-                class="h-auto justify-center items-center text-center  opacity-100 translate-y-20 transition-all duration-1000">
+                class="h-auto justify-center items-center text-center  opacity-100 translate-y-2 transition-all duration-1000">
                 <div class="flex justify-center items-center space-x-8">
                     <div class="flex-1 text-center content-center">
-                        <summary><strong class="text-xl">Pack Entreprises – "Social Media Boost"</strong>
+                        <summary><strong class="text-4xl font-normal">Pack Entreprises – "Social Media Boost"</strong>
                         </summary>
                         <div class="container mx-auto p-4 justify-center items-center content-center">
                             <!-- Sur mobile : 100% de largeur, sur sm : 75%, md : 66%, sur lg et plus : 50% -->
@@ -548,7 +555,7 @@
                 </div>
             </section>
             <section id="why-us"
-                class="min-h-screen flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-24 opacity-0 translate-y-10 transition-all duration-1000">
+                class="min-h-screen flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-24 opacity-0  translate-y-2 transition-all duration-1000">
                 <div class="w-full lg:w-1/2 max-w-2xl lg:pr-12 xl:pr-24 order-2 lg:order-1">
                     <h2
                         class="font-medium text-gray-200 text-4xl md:text-5xl lg:text-6xl xl:text-8xl mb-6 md:mb-8 lg:mb-10">
@@ -586,13 +593,13 @@
                 </div>
             </section>
             <section id="temoignages" class="relative w-full min-h-screen flex flex-col items-center justify-center text-center px-4 py-8
-       opacity-0 translate-y-10 transition-all duration-1000">
+       opacity-0  translate-y-2 transition-all duration-1000">
                 <!-- Fond en background image -->
                 <div class="absolute inset-0 
          bg-[url('./img/bg01.webp')] 
          bg-cover bg-center 
          bg-blend-multiply 
-         opacity-30">
+         opacity-30 max-w-full h-auto">
                 </div>
 
                 <!-- Contenu par-dessus le fond -->
@@ -614,7 +621,7 @@
             </section>
 
             <section id="cta "
-                class="grid place-content-center justify-center items-center text-center align-middle h-screen translate-y-10 transition-all duration-1000">
+                class="grid place-content-center justify-center items-center text-center align-middle h-screen  translate-y-2 transition-all duration-1000">
                 <h2
                     class="font-medium text-blue-500 text-4xl md:text-5xl lg:text-6xl xl:text-8xl mb-6 md:mb-8 lg:mb-10">
                     Prêt à passer à l'action ?</h2>
@@ -624,7 +631,7 @@
             <section id="contact" class="min-h-screen py-12 px-4 sm:px-6 lg:px-8 flex items-center justify-center">
                 <div class="max-w-4xl w-full space-y-8 bg-white/10 backdrop-blur-lg rounded-3xl p-8 shadow-2xl">
                     <h2
-                        class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 text-center mb-12">
+                        class="text-4xl font-extrabold text-blue-400 text-center mb-12">
                         Contactez-nous
                     </h2>
 
@@ -653,7 +660,7 @@
                         </div>
 
                         <button type="submit"
-                            class="w-full flex justify-center py-4 px-6 border border-transparent rounded-xl bg-gradient-to-r from-blue-200 to-blue-700 text-white font-semibold hover:from-blue-400 hover:to-blue-600 transition-all duration-300 shadow-lg hover:shadow-2xl">
+                            class="w-full flex justify-center py-4 px-6  rounded-xl bg-blue-500 text-white font-semibold hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-2xl">
                             Envoyer le message
                         </button>
                     </form>
@@ -670,15 +677,6 @@
                     </div>
                 </div>
             </section>
-             <footer class="py-8 px-4 md:px-8 bg-gray-900/50 mt-20">
-                <div class="max-w-6xl mx-auto text-center">
-                    <p class="text-gray-400 mb-4">&copy; 2025 Happy People's Graphic Studio</p>
-                    <nav class="flex justify-center space-x-6">
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Mentions légales</a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors">CGU</a>
-                    </nav>
-                </div>
-            </footer>
         </div>
     </div>
     <script>
