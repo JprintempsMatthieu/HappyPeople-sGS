@@ -1,11 +1,10 @@
 <!doctype html>
-<html class="overflow-hidden">
-
+<html class="overflow-auto scrollbar-hide">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="./output.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="./output.css" rel="stylesheet">
 
 </head>
 
@@ -92,179 +91,168 @@
                 <div class="flex-grow pt-12">
                     <section id="hero"
                         class="flex flex-col justify-center items-center text-center opacity-0 translate-y-20 transition-all duration-1000">
-                        <div class="py-12">
-                            <div class="font-bold text-6xl">
+                        <div class="py-8 sm:py-10 md:py-12">
+                            <div class="font-bold text-4xl sm:text-5xl md:text-6xl">
                                 <span>Boost ton image avec des designs</span>
-                                <div class="py-6">qui déchirent !</div>
+                                <div class="py-4 sm:py-6">qui déchirent !</div>
                             </div>
-                            <div class="font-normal text-xl text-gray-400">
+                            <div class="font-normal text-base sm:text-lg md:text-xl text-gray-400 mt-4">
                                 Que tu sois une Eglise, un jeune entrepreneur ou une Entreprise,
                                 <div>on a le pack qu'il te faut pour marquer les esprits.</div>
                             </div>
                         </div>
                         <a href="#packs"
-                            class="font-normal bg-blue-500 text-white px-4 py-2 text-xl rounded hover:bg-blue-600">
+                            class="font-normal bg-blue-500 text-white px-3 sm:px-4 md:px-4 lg:px-6 py-2 sm:py-2 text-base sm:text-xl md:text-xl rounded hover:bg-blue-600 transition-colors">
                             Découvres nos packs
                         </a>
                     </section>
                 </div>
+
             </section>
             <section id="presentation"
-                class="h-screen grid place-content-center text-center items-center justify-center p-10 text-wrap text-xl font-light     opacity-0 translate-y-20 transition-all duration-1000">
-                <h2 class="font-medium text-gray-200 text-8xl p-6">Qui sommes-nous ?</h2>
-                <div class="text-2xl p-4">
-                    <div class="text-gray-400"><span class="text-blue-400 font-medium">Chez Happy People's Graphic
-                            Studio</span>, on transforme tes idées
-                        en
-                        visuels qui parlent.
-                        <div class="animate-slide-up delay-200">Nos créations sont simples, efficaces et adaptées à tous
-                            – même pour ceux <div>découvrent
-                                le
-                                design pour la première fois !</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="packs"
-                class="h-auto justify-center items-center text-center  opacity-0 translate-y-20 transition-all duration-1000">
-                <h2 class="font-bold text-6xl mb-8">Nos Packs de Services</h2>
-                <div class="flex justify-center items-center space-x-8">
-                    <div class="flex-1 text-center content-center">
-                        <summary><strong class="text-xl">Pack Églises – "Événements Impactants"</strong></summary>
-                        <div class="container mx-auto p-4 justify-center items-center content-center">
-                            <!-- Sur mobile : 100% de largeur, sur sm : 75%, md : 66%, sur lg et plus : 50% -->
-                            <img src="img/Pack 01.jpg" alt="image des Pack church"
-                                class="block mx-auto w-full sm:w-3/4 md:w-2/3 lg:w-1/2">
-                        </div>
-                        <div class="text-gray-50 px-4 sm:px-8 md:px-16 py-12">
-                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-                                <!-- Card 1: Pack Basique -->
-                                <div
-                                    class="bg-gradient-to-b from-gray-800 to-gray-850 shadow-xl rounded-2xl p-6 border border-gray-600 hover:border-gray-500 hover:bg-gray-750 transition-all duration-300 h-full flex flex-col">
-                                    <div class="flex-1">
-                                        <p class="text-gray-400 text-sm uppercase tracking-wide mb-2">Mini-Pack Églises
-                                        </p>
-                                        <h2 class="text-2xl md:text-3xl font-bold text-gray-100">Pack Basique <span
-                                                class="text-lg md:text-xl">(35$)</span></h2>
-                                        <div class="mt-6 p-4 border border-gray-600 rounded-lg bg-gray-750">
-                                            <p class="font-semibold text-gray-200 mb-3">Ce mini-pack <span
-                                                    class="text-gray-400">comprend :</span></p>
-                                            <ul class="space-y-3 text-gray-300 text-sm md:text-base">
-                                                <li class="flex items-center gap-2"><span
-                                                        class="text-blue-400 text-lg">✔</span>3 designs de posters
-                                                    personnalisés</li>
-                                                <li class="flex items-center gap-2"><span
-                                                        class="text-blue-400 text-lg">✔</span>1 révision gratuite pour
-                                                    chaque design</li>
-                                                <li class="flex items-center gap-2"><span
-                                                        class="text-blue-400 text-lg">✔</span>Livraison en 72h max</li>
-                                            </ul>
-                                        </div>
-                                        <p class="text-sm md:text-base text-gray-400 mt-6 leading-relaxed">
-                                            Le paiement se fait via Mobile Money. Clique sur le bouton ci-dessous pour
-                                            finaliser ta commande sur WhatsApp.
-                                        </p>
-                                    </div>
-                                    <button
-                                        onclick="window.open('https://wa.me/243995342102?text=Je%20passe%20ma%20commande%20du%20mini%20pack%20eglise%20%3A%20Pack%20Basique', '_blank')"
-                                        class="mt-6 w-full bg-gray-700 text-gray-200 py-3 rounded-lg font-semibold hover:bg-gray-600 hover:text-white transition-colors duration-300">
-                                        Continuer
-                                    </button>
-                                </div>
+                class="h-screen grid place-content-center text-center p-6 sm:p-10 transition-all duration-1000 opacity-0 translate-y-20">
 
-                                <!-- Card 2: Pack Standard -->
-                                <div
-                                    class="bg-gradient-to-b from-gray-750 to-gray-800 shadow-xl rounded-2xl p-6 border border-blue-500 hover:border-blue-400 hover:bg-gray-900 transition-all duration-300 h-full flex flex-col relative">
-                                    <p class="text-blue-400  text-sm uppercase tracking-wide mb-2">Mini-Pack Eglise</p>
-                                    <div
-                                        class="bg-blue-500 text-white w-auto text-xs font-semibold px-3 py-1 rounded-full inline-block mb-3">
-                                        ⭐ Meilleur choix
-                                    </div>
-                                    <div class="flex-1">
-                                        <h2 class="text-2xl md:text-3xl font-bold text-gray-100">Pack Standard <span
-                                                class="text-lg md:text-xl">(75$)</span></h2>
-                                        <div class="mt-6 p-4 border border-blue-500 rounded-lg bg-gray-750">
-                                            <p class="font-semibold text-gray-200 mb-3">Ce pack <span
-                                                    class="text-blue-400">comprend :</span></p>
-                                            <ul class="space-y-3 text-gray-300 text-sm md:text-base">
-                                                <li class="flex items-center gap-2"><span
-                                                        class="text-blue-400 text-lg">✔</span>5 designs de posters
-                                                    personnalisés</li>
-                                                <li class="flex items-center gap-2"><span
-                                                        class="text-blue-400 text-lg">✔</span>2 révisions gratuites par
-                                                    design</li>
-                                                <li class="flex items-center gap-2"><span
-                                                        class="text-blue-400 text-lg">✔</span>Livraison en 48h max</li>
-                                                <li class="flex items-center gap-2"><span
-                                                        class="text-blue-400 text-lg">✔</span>Version optimisée pour
-                                                    réseaux sociaux</li>
-                                            </ul>
-                                        </div>
-                                        <p class="text-sm md:text-base text-gray-400 mt-6 leading-relaxed">
-                                            Paiement via Mobile Money. Clique sur le bouton ci-dessous pour commander
-                                            via WhatsApp.
-                                        </p>
-                                    </div>
-                                    <button
-                                        onclick="window.open('https://wa.me/243995342102?text=Je%20passe%20ma%20commande%20du%20mini%20pack%20eglise%20%3A%20Pack%20standard', '_blank')"
-                                        class="mt-6 w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-500 transition-colors duration-300">
-                                        Continuer
-                                    </button>
-                                </div>
+                <h2 class="font-medium text-gray-200 text-4xl sm:text-6xl md:text-8xl p-4 sm:p-6">
+                    Qui sommes-nous ?
+                </h2>
 
-                                <!-- Card 3: Pack Premium -->
-                                <div
-                                    class="bg-gradient-to-b from-gray-700 to-gray-750 shadow-xl rounded-2xl p-6 border border-yellow-500 hover:border-yellow-400 hover:bg-gray-800 transition-all duration-300 h-full flex flex-col">
-                                    <div class="flex-1">
-                                        <p class="text-yellow-400 text-sm uppercase tracking-wide mb-2">Mini-Pack
-                                            Églises</p>
-                                        <div
-                                            class="bg-yellow-500 text-gray-900 text-xs font-semibold px-3 py-1 rounded-full inline-block mb-3">
-                                            🏆 Offre Premium
-                                        </div>
-                                        <h2 class="text-2xl md:text-3xl font-bold text-gray-100">Pack Premium <span
-                                                class="text-yellow-400 text-lg md:text-xl">(150$)</span></h2>
-                                        <div class="mt-6 p-4 border border-yellow-500 rounded-lg">
-                                            <p class="font-semibold text-gray-200 mb-3">Ce pack <span
-                                                    class="text-yellow-400">inclut :</span></p>
-                                            <ul class="space-y-3 text-gray-300 text-sm md:text-base">
-                                                <li class="flex items-center gap-2"><span
-                                                        class="text-yellow-400 text-lg">✔</span>10 designs de posters
-                                                </li>
-                                                <li class="flex items-center gap-2"><span
-                                                        class="text-yellow-400 text-lg">✔</span>Révisions illimitées
-                                                </li>
-                                                <li class="flex items-center gap-2"><span
-                                                        class="text-yellow-400 text-lg">✔</span>Livraison en 96h max
-                                                </li>
-                                                <li class="flex items-center gap-2"><span
-                                                        class="text-yellow-400 text-lg">✔</span>Formats HD + optimisés
-                                                    réseaux sociaux</li>
-                                                <li class="flex items-center gap-2"><span
-                                                        class="text-yellow-400 text-lg">✔</span>Support client
-                                                    prioritaire</li>
-                                            </ul>
-                                        </div>
-                                        <p class="text-sm md:text-base text-gray-400 mt-6 leading-relaxed">
-                                            Paiement via Mobile Money. Clique sur le bouton ci-dessous pour commander
-                                            via WhatsApp.
-                                        </p>
-                                    </div>
-                                    <button
-                                        onclick="window.open('https://wa.me/243995342102?text=Je%20passe%20ma%20commande%20du%20mini%20pack%20eglise%20%3A%20Pack%20Premuim', '_blank')"
-                                        class="mt-6 w-full bg-yellow-500 text-gray-900 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors duration-300">
-                                        Continuer
-                                    </button>
-                                </div>
+                <div class="p-4 sm:p-6">
+                    <div class="text-gray-400 text-lg sm:text-xl md:text-2xl">
+                        <span class="text-blue-400 font-medium">Chez Happy People's Graphic Studio</span>, on transforme
+                        tes idées en visuels qui parlent.
+                        <div class="animate-slide-up delay-200 mt-4">
+                            Nos créations sont simples, efficaces et adaptées à tous – même pour ceux
+                            <div class="mt-2">
+                                découvrent le design pour la première fois !
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
+            <section id="packs" class="h-auto text-center opacity-100 translate-y-20 transition-all duration-1000 p-6 sm:p-10">
+                <h2 class="font-bold text-4xl sm:text-5xl md:text-6xl mb-8">Nos Packs de Services</h2>
+                <div class="flex flex-col lg:flex-row justify-center items-center lg:space-x-8">
+                  <div class="flex-1 text-center">
+                    <summary class="mb-4 block"><strong class="text-xl">Pack Églises – "Événements Impactants"</strong></summary>
+                    <div class="container mx-auto p-4 flex justify-center items-center">
+                      <!-- Sur mobile : 100% de largeur, sur sm : 75%, md : 66%, sur lg et plus : 50% -->
+                      <img src="img/Pack 01.jpg" alt="image des Pack church" class="block mx-auto w-full sm:w-3/4 md:w-2/3 lg:w-1/2">
+                    </div>
+                    <div class="text-gray-50 px-4 sm:px-8 md:px-16 py-12">
+                      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                        <!-- Card 1: Pack Basique -->
+                        <div class="bg-gradient-to-b from-gray-800 to-gray-850 shadow-xl rounded-2xl p-6 border border-gray-600 hover:border-gray-500 hover:bg-gray-750 transition-all duration-300 h-full flex flex-col">
+                          <div class="flex-1">
+                            <p class="text-gray-400 text-sm uppercase tracking-wide mb-2">Mini-Pack Églises</p>
+                            <h2 class="text-2xl md:text-3xl font-bold text-gray-100">
+                              Pack Basique <span class="text-lg md:text-xl">(35$)</span>
+                            </h2>
+                            <div class="mt-6 p-4 border border-gray-600 rounded-lg bg-gray-750">
+                              <p class="font-semibold text-gray-200 mb-3">Ce mini-pack <span class="text-gray-400">comprend :</span></p>
+                              <ul class="space-y-3 text-gray-300 text-sm md:text-base">
+                                <li class="flex items-center gap-2">
+                                  <span class="text-blue-400 text-lg">✔</span>3 designs de posters personnalisés
+                                </li>
+                                <li class="flex items-center gap-2">
+                                  <span class="text-blue-400 text-lg">✔</span>1 révision gratuite pour chaque design
+                                </li>
+                                <li class="flex items-center gap-2">
+                                  <span class="text-blue-400 text-lg">✔</span>Livraison en 72h max
+                                </li>
+                              </ul>
+                            </div>
+                            <p class="text-sm md:text-base text-gray-400 mt-6 leading-relaxed">
+                              Le paiement se fait via Mobile Money. Clique sur le bouton ci-dessous pour finaliser ta commande sur WhatsApp.
+                            </p>
+                          </div>
+                          <button onclick="window.open('https://wa.me/243995342102?text=Je%20passe%20ma%20commande%20du%20mini%20pack%20eglise%20%3A%20Pack%20Basique', '_blank')" class="mt-6 w-full bg-gray-700 text-gray-200 py-3 rounded-lg font-semibold hover:bg-gray-600 hover:text-white transition-colors duration-300">
+                            Continuer
+                          </button>
+                        </div>
+              
+                        <!-- Card 2: Pack Standard -->
+                        <div class="bg-gradient-to-b from-gray-750 to-gray-800 shadow-xl rounded-2xl p-6 border border-blue-500 hover:border-blue-400 hover:bg-gray-900 transition-all duration-300 h-full flex flex-col relative">
+                          <p class="text-blue-400 text-sm uppercase tracking-wide mb-2">Mini-Pack Eglise</p>
+                          <div class="bg-blue-500 text-white w-auto text-xs font-semibold px-3 py-1 rounded-full inline-block mb-3">
+                            ⭐ Meilleur choix
+                          </div>
+                          <div class="flex-1">
+                            <h2 class="text-2xl md:text-3xl font-bold text-gray-100">
+                              Pack Standard <span class="text-lg md:text-xl">(75$)</span>
+                            </h2>
+                            <div class="mt-6 p-4 border border-blue-500 rounded-lg bg-gray-750">
+                              <p class="font-semibold text-gray-200 mb-3">Ce pack <span class="text-blue-400">comprend :</span></p>
+                              <ul class="space-y-3 text-gray-300 text-sm md:text-base">
+                                <li class="flex items-center gap-2">
+                                  <span class="text-blue-400 text-lg">✔</span>5 designs de posters personnalisés
+                                </li>
+                                <li class="flex items-center gap-2">
+                                  <span class="text-blue-400 text-lg">✔</span>2 révisions gratuites par design
+                                </li>
+                                <li class="flex items-center gap-2">
+                                  <span class="text-blue-400 text-lg">✔</span>Livraison en 48h max
+                                </li>
+                                <li class="flex items-center gap-2">
+                                  <span class="text-blue-400 text-lg">✔</span>Version optimisée pour réseaux sociaux
+                                </li>
+                              </ul>
+                            </div>
+                            <p class="text-sm md:text-base text-gray-400 mt-6 leading-relaxed">
+                              Paiement via Mobile Money. Clique sur le bouton ci-dessous pour commander via WhatsApp.
+                            </p>
+                          </div>
+                          <button onclick="window.open('https://wa.me/243995342102?text=Je%20passe%20ma%20commande%20du%20mini%20pack%20eglise%20%3A%20Pack%20standard', '_blank')" class="mt-6 w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-500 transition-colors duration-300">
+                            Continuer
+                          </button>
+                        </div>
+              
+                        <!-- Card 3: Pack Premium -->
+                        <div class="bg-gradient-to-b from-gray-700 to-gray-750 shadow-xl rounded-2xl p-6 border border-yellow-500 hover:border-yellow-400 hover:bg-gray-800 transition-all duration-300 h-full flex flex-col">
+                          <div class="flex-1">
+                            <p class="text-yellow-400 text-sm uppercase tracking-wide mb-2">Mini-Pack Églises</p>
+                            <div class="bg-yellow-500 text-gray-900 text-xs font-semibold px-3 py-1 rounded-full inline-block mb-3">
+                              🏆 Offre Premium
+                            </div>
+                            <h2 class="text-2xl md:text-3xl font-bold text-gray-100">
+                              Pack Premium <span class="text-yellow-400 text-lg md:text-xl">(150$)</span>
+                            </h2>
+                            <div class="mt-6 p-4 border border-yellow-500 rounded-lg">
+                              <p class="font-semibold text-gray-200 mb-3">Ce pack <span class="text-yellow-400">inclut :</span></p>
+                              <ul class="space-y-3 text-gray-300 text-sm md:text-base">
+                                <li class="flex items-center gap-2">
+                                  <span class="text-yellow-400 text-lg">✔</span>10 designs de posters
+                                </li>
+                                <li class="flex items-center gap-2">
+                                  <span class="text-yellow-400 text-lg">✔</span>Révisions illimitées
+                                </li>
+                                <li class="flex items-center gap-2">
+                                  <span class="text-yellow-400 text-lg">✔</span>Livraison en 96h max
+                                </li>
+                                <li class="flex items-center gap-2">
+                                  <span class="text-yellow-400 text-lg">✔</span>Formats HD + optimisés réseaux sociaux
+                                </li>
+                                <li class="flex items-center gap-2">
+                                  <span class="text-yellow-400 text-lg">✔</span>Support client prioritaire
+                                </li>
+                              </ul>
+                            </div>
+                            <p class="text-sm md:text-base text-gray-400 mt-6 leading-relaxed">
+                              Paiement via Mobile Money. Clique sur le bouton ci-dessous pour commander via WhatsApp.
+                            </p>
+                          </div>
+                          <button onclick="window.open('https://wa.me/243995342102?text=Je%20passe%20ma%20commande%20du%20mini%20pack%20eglise%20%3A%20Pack%20Premuim', '_blank')" class="mt-6 w-full bg-yellow-500 text-gray-900 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors duration-300">
+                            Continuer
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
 
             <section id="packs"
-                class="h-auto justify-center items-center text-center  opacity-0 translate-y-20 transition-all duration-1000">
+                class="h-auto justify-center items-center text-center  opacity-100 translate-y-20 transition-all duration-1000">
                 <div class="flex justify-center items-center space-x-8">
                     <div class="flex-1 text-center content-center">
                         <summary><strong class="text-xl">Pack Jeunes Entrepreneurs – "Identité Pro Clé en Main"</strong>
@@ -418,7 +406,7 @@
                 </div>
             </section>
             <section id="packs"
-                class="h-auto justify-center items-center text-center  opacity-0 translate-y-20 transition-all duration-1000">
+                class="h-auto justify-center items-center text-center  opacity-100 translate-y-20 transition-all duration-1000">
                 <div class="flex justify-center items-center space-x-8">
                     <div class="flex-1 text-center content-center">
                         <summary><strong class="text-xl">Pack Entreprises – "Social Media Boost"</strong>
@@ -460,7 +448,7 @@
                                         </p>
                                     </div>
                                     <button
-                                    onclick="window.open('https://wa.me/243995342102?text=Je%20passe%20ma%20commande%20du%20mini%20pack%20Business%20%3A%20Pack%20Essentials', '_blank')"
+                                        onclick="window.open('https://wa.me/243995342102?text=Je%20passe%20ma%20commande%20du%20mini%20pack%20Business%20%3A%20Pack%20Essentials', '_blank')"
                                         class="mt-6 w-full bg-gray-700 text-gray-200 py-3 rounded-lg font-semibold hover:bg-gray-600 hover:text-white transition-colors duration-300">
                                         Continuer
                                     </button>
