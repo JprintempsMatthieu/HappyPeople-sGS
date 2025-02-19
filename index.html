@@ -1,0 +1,732 @@
+<!doctype html>
+<html class="overflow-hidden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gray-950  text-gray-50">
+    <div class="relative">
+        <div
+            class="absolute top-96 -left-40 w-96 h-72 bg-blue-500 rounded-full mix-blend-normal filter blur-3xl opacity-50 animate-blob ">
+        </div>
+        <div
+            class="absolute top-0 -right-4 w-72 h-72 bg-orange-800 rounded-full mix-blend-normal filter blur-3xl opacity-50 animate-blob animation-delay-2000">
+        </div>
+        <div
+            class="absolute -bottom-60 left-64 w-96 h-96 bg-orange-400 rounded-full mix-blend-normal filter blur-3xl opacity-50 animate-blob animation-delay-4000">
+        </div>
+        <div id="s" class="relative overflow-y-auto h-screen">
+            <section class="h-screen flex flex-col">
+                <!-- Header -->
+                <header class="p-4 flex items-start justify-between">
+                    <!-- Logo -->
+                    <div class="flex items-start justify-start px-5">
+                        <img class="max-w-xl h-auto" src="img/Logo.jpg" alt="Logo Graphic Studio">
+                    </div>
+                    <!-- Desktop Menu -->
+                    <nav class="hidden md:flex items-center space-x-6">
+                        <ul class="flex space-x-4 text-base font-medium">
+                            <li><a href="#hero" class="hover:text-orange-400 px-2">Accueil</a></li>
+                            <li><a href="#packs" class="hover:text-orange-400 px-2">Nos Packs</a></li>
+                            <li><a href="#temoignages" class="hover:text-orange-400 px-2">Témoignages</a></li>
+                            <li><a href="#contact" class="hover:text-orange-400 px-2">Contact</a></li>
+                        </ul>
+                        <a href="#contact"
+                            class="bg-blue-500 text-white px-4 py-2 rounded font-normal text-base hover:bg-blue-600">
+                            Demande ton devis
+                        </a>
+                    </nav>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden">
+                        <button id="mobile-menu-button" type="button" class="focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 8h16M4 16h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </header>
+
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="md:hidden hidden px-4">
+                    <ul class="pt-2 pb-3 space-y-1">
+                        <li>
+                            <a href="#hero"
+                                class="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-400">
+                                Accueil
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#packs"
+                                class="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-400">
+                                Nos Packs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#temoignages"
+                                class="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-400">
+                                Témoignages
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact"
+                                class="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-400">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#contact"
+                        class="block bg-blue-500 text-white px-3 py-2 rounded-md text-base font-medium text-center hover:bg-blue-600 mb-4">
+                        Demande ton devis
+                    </a>
+                </div>
+
+                <!-- Main Content / Hero -->
+                <div class="flex-grow pt-12">
+                    <section id="hero"
+                        class="flex flex-col justify-center items-center text-center opacity-0 translate-y-20 transition-all duration-1000">
+                        <div class="py-12">
+                            <div class="font-bold text-6xl">
+                                <span>Boost ton image avec des designs</span>
+                                <div class="py-6">qui déchirent !</div>
+                            </div>
+                            <div class="font-normal text-xl text-gray-400">
+                                Que tu sois une Eglise, un jeune entrepreneur ou une Entreprise,
+                                <div>on a le pack qu'il te faut pour marquer les esprits.</div>
+                            </div>
+                        </div>
+                        <a href="#packs"
+                            class="font-normal bg-blue-500 text-white px-4 py-2 text-xl rounded hover:bg-blue-600">
+                            Découvres nos packs
+                        </a>
+                    </section>
+                </div>
+            </section>
+            <section id="presentation"
+                class="h-screen grid place-content-center text-center items-center justify-center p-10 text-wrap text-xl font-light     opacity-0 translate-y-20 transition-all duration-1000">
+                <h2 class="font-medium text-gray-200 text-8xl p-6">Qui sommes-nous ?</h2>
+                <div class="text-2xl p-4">
+                    <div class="text-gray-400"><span class="text-blue-400 font-medium">Chez Happy People's Graphic
+                            Studio</span>, on transforme tes idées
+                        en
+                        visuels qui parlent.
+                        <div class="animate-slide-up delay-200">Nos créations sont simples, efficaces et adaptées à tous
+                            – même pour ceux <div>découvrent
+                                le
+                                design pour la première fois !</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="packs"
+                class="h-auto justify-center items-center text-center  opacity-0 translate-y-20 transition-all duration-1000">
+                <h2 class="font-bold text-6xl mb-8">Nos Packs de Services</h2>
+                <div class="flex justify-center items-center space-x-8">
+                    <div class="flex-1 text-center content-center">
+                        <summary><strong class="text-xl">Pack Églises – "Événements Impactants"</strong></summary>
+                        <div class="container mx-auto p-4 justify-center items-center content-center">
+                            <!-- Sur mobile : 100% de largeur, sur sm : 75%, md : 66%, sur lg et plus : 50% -->
+                            <img src="img/Pack 01.jpg" alt="image des Pack church"
+                                class="block mx-auto w-full sm:w-3/4 md:w-2/3 lg:w-1/2">
+                        </div>
+                        <div class="text-gray-50 px-4 sm:px-8 md:px-16 py-12">
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                                <!-- Card 1: Pack Basique -->
+                                <div
+                                    class="bg-gradient-to-b from-gray-800 to-gray-850 shadow-xl rounded-2xl p-6 border border-gray-600 hover:border-gray-500 hover:bg-gray-750 transition-all duration-300 h-full flex flex-col">
+                                    <div class="flex-1">
+                                        <p class="text-gray-400 text-sm uppercase tracking-wide mb-2">Mini-Pack Églises
+                                        </p>
+                                        <h2 class="text-2xl md:text-3xl font-bold text-gray-100">Pack Basique <span
+                                                class="text-lg md:text-xl">(35$)</span></h2>
+                                        <div class="mt-6 p-4 border border-gray-600 rounded-lg bg-gray-750">
+                                            <p class="font-semibold text-gray-200 mb-3">Ce mini-pack <span
+                                                    class="text-gray-400">comprend :</span></p>
+                                            <ul class="space-y-3 text-gray-300 text-sm md:text-base">
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>3 designs de posters
+                                                    personnalisés</li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>1 révision gratuite pour
+                                                    chaque design</li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>Livraison en 72h max</li>
+                                            </ul>
+                                        </div>
+                                        <p class="text-sm md:text-base text-gray-400 mt-6 leading-relaxed">
+                                            Le paiement se fait via Mobile Money. Clique sur le bouton ci-dessous pour
+                                            finaliser ta commande sur WhatsApp.
+                                        </p>
+                                    </div>
+                                    <button
+                                        onclick="window.open('https://wa.me/243995342102?text=Je%20passe%20ma%20commande%20du%20mini%20pack%20eglise%20%3A%20Pack%20Basique', '_blank')"
+                                        class="mt-6 w-full bg-gray-700 text-gray-200 py-3 rounded-lg font-semibold hover:bg-gray-600 hover:text-white transition-colors duration-300">
+                                        Continuer
+                                    </button>
+                                </div>
+
+                                <!-- Card 2: Pack Standard -->
+                                <div
+                                    class="bg-gradient-to-b from-gray-750 to-gray-800 shadow-xl rounded-2xl p-6 border border-blue-500 hover:border-blue-400 hover:bg-gray-900 transition-all duration-300 h-full flex flex-col relative">
+                                    <p class="text-blue-400  text-sm uppercase tracking-wide mb-2">Mini-Pack Eglise</p>
+                                    <div
+                                        class="bg-blue-500 text-white w-auto text-xs font-semibold px-3 py-1 rounded-full inline-block mb-3">
+                                        ⭐ Meilleur choix
+                                    </div>
+                                    <div class="flex-1">
+                                        <h2 class="text-2xl md:text-3xl font-bold text-gray-100">Pack Standard <span
+                                                class="text-lg md:text-xl">(75$)</span></h2>
+                                        <div class="mt-6 p-4 border border-blue-500 rounded-lg bg-gray-750">
+                                            <p class="font-semibold text-gray-200 mb-3">Ce pack <span
+                                                    class="text-blue-400">comprend :</span></p>
+                                            <ul class="space-y-3 text-gray-300 text-sm md:text-base">
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>5 designs de posters
+                                                    personnalisés</li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>2 révisions gratuites par
+                                                    design</li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>Livraison en 48h max</li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>Version optimisée pour
+                                                    réseaux sociaux</li>
+                                            </ul>
+                                        </div>
+                                        <p class="text-sm md:text-base text-gray-400 mt-6 leading-relaxed">
+                                            Paiement via Mobile Money. Clique sur le bouton ci-dessous pour commander
+                                            via WhatsApp.
+                                        </p>
+                                    </div>
+                                    <button
+                                        onclick="window.open('https://wa.me/243995342102?text=Je%20passe%20ma%20commande%20du%20mini%20pack%20eglise%20%3A%20Pack%20standard', '_blank')"
+                                        class="mt-6 w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-500 transition-colors duration-300">
+                                        Continuer
+                                    </button>
+                                </div>
+
+                                <!-- Card 3: Pack Premium -->
+                                <div
+                                    class="bg-gradient-to-b from-gray-700 to-gray-750 shadow-xl rounded-2xl p-6 border border-yellow-500 hover:border-yellow-400 hover:bg-gray-800 transition-all duration-300 h-full flex flex-col">
+                                    <div class="flex-1">
+                                        <p class="text-yellow-400 text-sm uppercase tracking-wide mb-2">Mini-Pack
+                                            Églises</p>
+                                        <div
+                                            class="bg-yellow-500 text-gray-900 text-xs font-semibold px-3 py-1 rounded-full inline-block mb-3">
+                                            🏆 Offre Premium
+                                        </div>
+                                        <h2 class="text-2xl md:text-3xl font-bold text-gray-100">Pack Premium <span
+                                                class="text-yellow-400 text-lg md:text-xl">(150$)</span></h2>
+                                        <div class="mt-6 p-4 border border-yellow-500 rounded-lg">
+                                            <p class="font-semibold text-gray-200 mb-3">Ce pack <span
+                                                    class="text-yellow-400">inclut :</span></p>
+                                            <ul class="space-y-3 text-gray-300 text-sm md:text-base">
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-yellow-400 text-lg">✔</span>10 designs de posters
+                                                </li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-yellow-400 text-lg">✔</span>Révisions illimitées
+                                                </li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-yellow-400 text-lg">✔</span>Livraison en 96h max
+                                                </li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-yellow-400 text-lg">✔</span>Formats HD + optimisés
+                                                    réseaux sociaux</li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-yellow-400 text-lg">✔</span>Support client
+                                                    prioritaire</li>
+                                            </ul>
+                                        </div>
+                                        <p class="text-sm md:text-base text-gray-400 mt-6 leading-relaxed">
+                                            Paiement via Mobile Money. Clique sur le bouton ci-dessous pour commander
+                                            via WhatsApp.
+                                        </p>
+                                    </div>
+                                    <button
+                                        onclick="window.open('https://wa.me/243995342102?text=Je%20passe%20ma%20commande%20du%20mini%20pack%20eglise%20%3A%20Pack%20Premuim', '_blank')"
+                                        class="mt-6 w-full bg-yellow-500 text-gray-900 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors duration-300">
+                                        Continuer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="packs"
+                class="h-auto justify-center items-center text-center  opacity-0 translate-y-20 transition-all duration-1000">
+                <div class="flex justify-center items-center space-x-8">
+                    <div class="flex-1 text-center content-center">
+                        <summary><strong class="text-xl">Pack Jeunes Entrepreneurs – "Identité Pro Clé en Main"</strong>
+                        </summary>
+                        <div class="container mx-auto p-4 justify-center items-center content-center">
+                            <!-- Sur mobile : 100% de largeur, sur sm : 75%, md : 66%, sur lg et plus : 50% -->
+                            <img src="img/Pack 02.jpg" alt="image des Pack church"
+                                class="block mx-auto w-full sm:w-3/4 md:w-2/3 lg:w-1/2">
+                        </div>
+                        <div class="text-gray-50 px-4 sm:px-8 md:px-16 py-12">
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                                <!-- Card 1: Pack Basique -->
+                                <div
+                                    class="bg-gradient-to-b from-gray-800 to-gray-850 shadow-xl rounded-2xl p-6 border border-gray-600 hover:border-gray-500 hover:bg-gray-750 transition-all duration-300 h-full flex flex-col">
+                                    <div class="flex-1">
+                                        <p class="text-gray-400 text-sm uppercase tracking-wide mb-2">Mini-Pack Startup
+                                        </p>
+                                        <h2 class="text-2xl md:text-3xl font-bold text-gray-100">Pack Découverte<span
+                                                class="text-lg md:text-xl">(60$)</span></h2>
+                                        <div class="mt-6 p-4 border border-gray-600 rounded-lg bg-gray-750">
+                                            <p class="font-semibold text-gray-200 mb-3">Ce mini-pack <span
+                                                    class="text-gray-400">comprend :</span></p>
+                                            <ul class="space-y-3 text-gray-300 text-sm md:text-base">
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>Logo simple (2
+                                                    propositions + 1
+                                                    révision)</li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>Photo de profil pro
+                                                    retouchée (1
+                                                    version)</li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>Bannière LinkedIn/YouTube
+                                                </li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>1 template de catalogue
+                                                    basique
+                                                    (10 pages)</li>
+                                            </ul>
+                                        </div>
+                                        <p class="text-sm md:text-base text-gray-400 mt-6 leading-relaxed">
+                                            Le paiement se fait via Mobile Money. Clique sur le bouton ci-dessous pour
+                                            finaliser
+                                            ta commande sur WhatsApp.
+                                        </p>
+                                    </div>
+                                    <button
+                                        onclick="window.open('https://wa.me/243995342102?text=Je%20passe%20ma%20commande%20du%20mini%20pack%20Startup%20%3A%20Pack%20Découverte', '_blank')"
+                                        class="mt-6 w-full bg-gray-700 text-gray-200 py-3 rounded-lg font-semibold hover:bg-gray-600 hover:text-white transition-colors duration-300">
+                                        Continuer
+                                    </button>
+                                </div>
+
+                                <!-- Card 2: Pack Standard -->
+                                <div
+                                    class="bg-gradient-to-b from-gray-750 to-gray-800 shadow-xl rounded-2xl p-6 border border-blue-500 hover:border-blue-400 hover:bg-gray-900 transition-all duration-300 h-full flex flex-col relative">
+                                    <div class="flex-1">
+                                        <p class="text-blue-400  text-sm uppercase tracking-wide mb-2">Mini-Pack Startup
+                                        </p>
+                                        <div
+                                            class="bg-blue-500 text-white  text-xs font-semibold px-3 py-1 rounded-full inline-block mb-3">
+                                            ⭐ Meilleur choix
+                                        </div>
+                                        <h2 class="text-2xl md:text-3xl font-bold text-gray-100">Pack Business <span
+                                                class="text-lg md:text-xl">(150$)</span></h2>
+                                        <div class="mt-6 p-4 border border-blue-500 rounded-lg bg-gray-750">
+                                            <p class="font-semibold text-gray-200 mb-3">Ce pack <span
+                                                    class="text-blue-400">comprend :</span></p>
+                                            <ul class="space-y-3 text-gray-300 text-sm md:text-base">
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>Logo premium (3
+                                                    propositions + 3 révisions)
+                                                </li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>Charte graphique
+                                                    simplifiée (couleurs, typo)
+                                                </li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>Pack réseaux sociaux : 5
+                                                    posts templates (carrousel + stories)</li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>3 photos de profil pro
+                                                    (différents styles)</li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>Catalogue professionnel
+                                                    (20 pages, design moderne)</li>
+                                            </ul>
+                                        </div>
+                                        <p class="text-sm md:text-base text-gray-400 mt-6 leading-relaxed">
+                                            Paiement via Mobile Money. Clique sur le bouton ci-dessous pour commander
+                                            via
+                                            WhatsApp.
+                                        </p>
+                                    </div>
+                                    <button
+                                        onclick="window.open('https://wa.me/243995342102?text=Je%20passe%20ma%20commande%20du%20mini%20pack%20Startup%20%3A%20Pack%20Business', '_blank')"
+                                        class="mt-6 w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-500 transition-colors duration-300">
+                                        Continuer
+                                    </button>
+                                </div>
+
+                                <!-- Card 3: Pack Premium -->
+                                <div
+                                    class="bg-gradient-to-b from-gray-700 to-gray-750 shadow-xl rounded-2xl p-6 border border-yellow-500 hover:border-yellow-400 hover:bg-gray-800 transition-all duration-300 h-full flex flex-col">
+                                    <div class="flex-1">
+                                        <p class="text-yellow-400 text-sm uppercase tracking-wide mb-2">Mini-Pack
+                                            Startup</p>
+                                        <div
+                                            class="bg-yellow-500 text-gray-900 text-xs font-semibold px-3 py-1 rounded-full inline-block mb-3">
+                                            🏆 Offre Premium
+                                        </div>
+                                        <h2 class="text-2xl md:text-3xl font-bold text-gray-100">Pack Élite <span
+                                                class="text-yellow-400 text-lg md:text-xl">(300$)</span></h2>
+                                        <div class="mt-6 p-4 border border-yellow-500 rounded-lg">
+                                            <p class="font-semibold text-gray-200 mb-3">Ce pack <span
+                                                    class="text-yellow-400">inclut :</span></p>
+                                            <ul class="space-y-3 text-gray-300 text-sm md:text-base">
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-yellow-400 text-lg">✔</span>Identité visuelle
+                                                    complète (logo, charte graphique détaillée, moodboard)</li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-yellow-400 text-lg">✔</span>10 templates réseaux
+                                                    sociaux (posts, stories, bannières)</li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-yellow-400 text-lg">✔</span>5 photos de profil pro
+                                                </li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-yellow-400 text-lg">✔</span>Catalogue interactif
+                                                    (version web + PDF)</li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-yellow-400 text-lg">✔</span>Carte de visite digitale
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="text-sm md:text-base text-gray-400 mt-6 leading-relaxed">
+                                            Paiement via Mobile Money. Clique sur le bouton ci-dessous pour commander
+                                            via
+                                            WhatsApp.
+                                        </p>
+                                    </div>
+                                    <button
+                                        onclick="window.open('https://wa.me/243995342102?text=Je%20passe%20ma%20commande%20du%20mini%20pack%20Startup%20%3A%20Pack%20Elite', '_blank')"
+                                        class="mt-6 w-full bg-yellow-500 text-gray-900 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors duration-300">
+                                        Continuer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section id="packs"
+                class="h-auto justify-center items-center text-center  opacity-0 translate-y-20 transition-all duration-1000">
+                <div class="flex justify-center items-center space-x-8">
+                    <div class="flex-1 text-center content-center">
+                        <summary><strong class="text-xl">Pack Entreprises – "Social Media Boost"</strong>
+                        </summary>
+                        <div class="container mx-auto p-4 justify-center items-center content-center">
+                            <!-- Sur mobile : 100% de largeur, sur sm : 75%, md : 66%, sur lg et plus : 50% -->
+                            <img src="img/Pack 03.jpg" alt="image des Pack church"
+                                class="block mx-auto w-full sm:w-3/4 md:w-2/3 lg:w-1/2">
+                        </div>
+                        <div class="text-gray-50 px-4 sm:px-8 md:px-16 py-12">
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                                <!-- Card 1: Pack Basique -->
+                                <div
+                                    class="bg-gradient-to-b from-gray-800 to-gray-850 shadow-xl rounded-2xl p-6 border border-gray-600 hover:border-gray-500 hover:bg-gray-750 transition-all duration-300 h-full flex flex-col">
+                                    <div class="flex-1">
+                                        <p class="text-gray-400 text-sm uppercase tracking-wide mb-2">Mini-Pack Business
+                                        </p>
+                                        <h2 class="text-2xl md:text-3xl font-bold text-gray-100">Pack Essentials<span
+                                                class="text-lg md:text-xl">(50$)</span></h2>
+                                        <div class="mt-6 p-4 border border-gray-600 rounded-lg bg-gray-750">
+                                            <p class="font-semibold text-gray-200 mb-3">Ce mini-pack <span
+                                                    class="text-gray-400">comprend :</span></p>
+                                            <ul class="space-y-3 text-gray-300 text-sm md:text-base">
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>3 posts réseaux sociaux
+                                                </li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>1 version par post</li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>Texte optimisé SEO</li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>Livraison en 5 jours</li>
+                                            </ul>
+                                        </div>
+                                        <p class="text-sm md:text-base text-gray-400 mt-6 leading-relaxed">
+                                            Le paiement se fait via Mobile Money. Clique sur le bouton ci-dessous pour
+                                            finaliser
+                                            ta commande sur WhatsApp.
+                                        </p>
+                                    </div>
+                                    <button
+                                    onclick="window.open('https://wa.me/243995342102?text=Je%20passe%20ma%20commande%20du%20mini%20pack%20Business%20%3A%20Pack%20Essentials', '_blank')"
+                                        class="mt-6 w-full bg-gray-700 text-gray-200 py-3 rounded-lg font-semibold hover:bg-gray-600 hover:text-white transition-colors duration-300">
+                                        Continuer
+                                    </button>
+                                </div>
+
+                                <!-- Card 2: Pack Standard -->
+                                <div
+                                    class="bg-gradient-to-b from-gray-750 to-gray-800 shadow-xl rounded-2xl p-6 border border-blue-500 hover:border-blue-400 hover:bg-gray-900 transition-all duration-300 h-full flex flex-col relative">
+                                    <div class="flex-1">
+                                        <p class="text-blue-400  text-sm uppercase tracking-wide mb-2">Mini-Pack
+                                            Business</p>
+                                        <div
+                                            class="bg-blue-500 text-white  text-xs font-semibold px-3 py-1 rounded-full inline-block mb-3">
+                                            ⭐ Meilleur choix
+                                        </div>
+                                        <h2 class="text-2xl md:text-3xl font-bold text-gray-100">Pack Performance<span
+                                                class="text-lg md:text-xl">(150$)</span></h2>
+                                        <div class="mt-6 p-4 border border-blue-500 rounded-lg bg-gray-750">
+                                            <p class="font-semibold text-gray-200 mb-3">Ce pack <span
+                                                    class="text-blue-400">comprend :</span></p>
+                                            <ul class="space-y-3 text-gray-300 text-sm md:text-base">
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>5 posts + 3 stories
+                                                    animées
+                                                </li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>2 révisions par post
+                                                </li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>Kit de hashtags
+                                                    personnalisés</li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-blue-400 text-lg">✔</span>Planning de publication
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <p class="text-sm md:text-base text-gray-400 mt-6 leading-relaxed">
+                                            Paiement via Mobile Money. Clique sur le bouton ci-dessous pour commander
+                                            via
+                                            WhatsApp.
+                                        </p>
+                                    </div>
+                                    <button
+                                        onclick="window.open('https://wa.me/243995342102?text=Je%20passe%20ma%20commande%20du%20mini%20pack%20Business%20%3A%20Pack%20Performance', '_blank')"
+                                        class="mt-6 w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-500 transition-colors duration-300">
+                                        Continuer
+                                    </button>
+                                </div>
+
+                                <!-- Card 3: Pack Premium -->
+                                <div
+                                    class="bg-gradient-to-b from-gray-700 to-gray-750 shadow-xl rounded-2xl p-6 border border-yellow-500 hover:border-yellow-400 hover:bg-gray-800 transition-all duration-300 h-full flex flex-col">
+                                    <div class="flex-1">
+                                        <p class="text-yellow-400 text-sm uppercase tracking-wide mb-2">Mini-Pack
+                                            Business</p>
+                                        <div
+                                            class="bg-yellow-500 text-gray-900 text-xs font-semibold px-3 py-1 rounded-full inline-block mb-3">
+                                            🏆 Offre Premium
+                                        </div>
+                                        <h2 class="text-2xl md:text-3xl font-bold text-gray-100">Pack VIP <span
+                                                class="text-yellow-400 text-lg md:text-xl">(500$)</span></h2>
+                                        <div class="mt-6 p-4 border border-yellow-500 rounded-lg">
+                                            <p class="font-semibold text-gray-200 mb-3">Ce pack <span
+                                                    class="text-yellow-400">inclut :</span></p>
+                                            <ul class="space-y-3 text-gray-300 text-sm md:text-base">
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-yellow-400 text-lg">✔</span>10 posts + 5 stories + 1
+                                                    vidéo</li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-yellow-400 text-lg">✔</span>Identité visuelle
+                                                    adaptée</li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-yellow-400 text-lg">✔</span>Rapport d'engagement
+                                                    mensuel</li>
+                                                <li class="flex items-center gap-2"><span
+                                                        class="text-yellow-400 text-lg">✔</span>Livraison prioritaire
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="text-sm md:text-base text-gray-400 mt-6 leading-relaxed">
+                                            Paiement via Mobile Money. Clique sur le bouton ci-dessous pour commander
+                                            via
+                                            WhatsApp.
+                                        </p>
+                                    </div>
+                                    <button
+                                        onclick="window.open('https://wa.me/243995342102?text=Je%20passe%20ma%20commande%20du%20mini%20pack%20Business%20%3A%20Pack%20VIP', '_blank')"
+                                        class="mt-6 w-full bg-yellow-500 text-gray-900 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-colors duration-300">
+                                        Continuer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section id="why-us"
+                class="min-h-screen flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-24 opacity-0 translate-y-10 transition-all duration-1000">
+                <div class="w-full lg:w-1/2 max-w-2xl lg:pr-12 xl:pr-24 order-2 lg:order-1">
+                    <h2
+                        class="font-medium text-gray-200 text-4xl md:text-5xl lg:text-6xl xl:text-8xl mb-6 md:mb-8 lg:mb-10">
+                        Pourquoi Nous Choisir ?
+                    </h2>
+
+                    <ul
+                        class="font-normal text-gray-100 text-base md:text-lg lg:text-xl space-y-4 md:space-y-5 mb-8 md:mb-12">
+                        <li class="flex items-start gap-3">
+                            <span class="text-blue-400 text-md md:text-lg shrink-0 mt-1">✔</span>
+                            Expertise en design graphique de haut niveau
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-blue-400 text-md md:text-lg shrink-0 mt-1">✔</span>
+                            Simple et efficace pour tous les budgets
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-blue-400 text-md md:text-lg shrink-0 mt-1">✔</span>
+                            Créativité et rapidité d'exécution
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-blue-400 text-md md:text-lg shrink-0 mt-1">✔</span>
+                            Accompagnement personnalisé pour booster ta visibilité
+                        </li>
+                    </ul>
+
+                    <div class="font-medium text-blue-400 text-lg md:text-2xl lg:text-3xl xl:text-4xl">
+                        Prêt à transformer ton image et à te démarquer ?
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2 max-w-3xl mb-12 lg:mb-0 order-1 lg:order-2">
+                    <img src="img/Studio.webp" alt="Image de studio"
+                        class="w-full h-auto rounded-lg shadow-xl object-cover lg:max-h-[600px]" loading="lazy">
+                </div>
+            </section>
+            <section id="temoignages" class="relative w-full min-h-screen flex flex-col items-center justify-center text-center px-4 py-8
+       opacity-0 translate-y-10 transition-all duration-1000">
+                <!-- Fond en background image -->
+                <div class="absolute inset-0 
+         bg-[url('./img/bg01.webp')] 
+         bg-cover bg-center 
+         bg-blend-multiply 
+         opacity-30">
+                </div>
+
+                <!-- Contenu par-dessus le fond -->
+                <div class="relative z-10">
+                    <h2 class="font-medium text-gray-200 
+             text-4xl md:text-5xl lg:text-6xl xl:text-8xl 
+             mb-6 md:mb-8 lg:mb-10">
+                        Témoignages de nos Clients
+                    </h2>
+                    <blockquote>
+                        <div class="text-xl md:text-2xl shrink-0 mt-1 font-light p-4">
+                            "Grâce à HappyPeople's Graphic Studio, notre communication a pris un nouveau souffle !"
+                        </div>
+                        <footer class="text-lg md:text-xl shrink-0 mt-1 font-light">
+                            - Client satisfait
+                        </footer>
+                    </blockquote>
+                </div>
+            </section>
+
+            <section id="cta "
+                class="grid place-content-center justify-center items-center text-center align-middle h-screen translate-y-10 transition-all duration-1000">
+                <h2
+                    class="font-medium text-blue-500 text-4xl md:text-5xl lg:text-6xl xl:text-8xl mb-6 md:mb-8 lg:mb-10">
+                    Prêt à passer à l'action ?</h2>
+                <a href="#contact" class="text-xl md:text-2xl shrink-0 mt-1 font-medium">Contacte-nous dès
+                    maintenant</a>
+            </section>
+            <section id="contact" class="min-h-screen py-12 px-4 sm:px-6 lg:px-8 flex items-center justify-center">
+                <div class="max-w-4xl w-full space-y-8 bg-white/10 backdrop-blur-lg rounded-3xl p-8 shadow-2xl">
+                    <h2
+                        class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 text-center mb-12">
+                        Contactez-nous
+                    </h2>
+
+                    <form class="mt-8 space-y-6" action="#" method="post">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="space-y-4">
+                                <label class="block text-md font-normal text-blue-400">Votre nom</label>
+                                <input id="name" name="name" type="text" required
+                                    class="w-full px-5 py-3 text-base text-gray-200 placeholder-gray-400 bg-gray-800/40 rounded-lg border border-gray-600 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/50 transition-all duration-300"
+                                    placeholder="Jean Mwanza">
+                            </div>
+
+                            <div class="space-y-4">
+                                <label class="block text-md font-normal text-blue-400">Adresse email</label>
+                                <input id="email" name="email" type="email" required
+                                    class="w-full px-5 py-3 text-base text-gray-200 placeholder-gray-400 bg-gray-800/40 rounded-lg border border-gray-600 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/50 transition-all duration-300"
+                                    placeholder="jeanmwanza@gmail.com">
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <label class="block text-md font-normal text-blue-400">Message</label>
+                            <textarea id="message" name="message" rows="4" required
+                                class="w-full px-5 py-3 text-base text-gray-200 placeholder-gray-400 bg-gray-800/40 rounded-lg border border-gray-600 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/50 transition-all duration-300"
+                                placeholder="Votre message..."></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full flex justify-center py-4 px-6 border border-transparent rounded-xl bg-gradient-to-r from-blue-200 to-blue-700 text-white font-semibold hover:from-blue-400 hover:to-blue-600 transition-all duration-300 shadow-lg hover:shadow-2xl">
+                            Envoyer le message
+                        </button>
+                    </form>
+
+                    <div class="mt-12">
+                        <p class="text-center text-gray-300 text-sm font-light flex flex-wrap justify-center gap-4">
+                            <span class="inline-flex items-center">
+                                ✉️ contact@HappyPeoplesGraphicStudio.com
+                            </span>
+                            <span class="inline-flex items-center">
+                                📞 +243 995-342-102
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <footer class="flex mb-0 justify-center align-middle content-center text-center">
+                <p>&copy; 2025 Happy People's Graphic Studio. Tous droits réservés.</p>
+                <nav>
+                    <ul>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">CGU</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+    </div>
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        if (window.innerWidth <= 600) {
+            document.querySelector('img').style.width = '75%';
+        } else if (window.innerWidth <= 1024) {
+            document.querySelector('img').style.width = '50%';
+        } else if (window.innerWidth >= 1200) {
+            document.querySelector('img').style.width = '33%';
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+            const sections = document.querySelectorAll("section");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("opacity-100", "translate-y-0");
+                    } else {
+                        entry.target.classList.remove("opacity-100", "translate-y-0");
+                    }
+                });
+            }, { threshold: 0.3 });
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+
+
+
+
+</html
