@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nos Services - HappyPeople's Graphic Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet" />
+</head>
+
+<body class="class= bg-gray-950  text-gray-50  antialiased leading-relaxed">
+    <div class="relative">
+        <div
+            class="absolute top-64 left-0 w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-blue-500 rounded-full mix-blend-normal filter blur-3xl opacity-50 animate-blob">
+        </div>
+
+        <!-- Blob 2 -->
+        <div
+            class="absolute top-10 right-32 w-40 h-40 sm:w-40 sm:h-40 md:w-64 md:h-64 lg:w-72 lg:h-72 bg-orange-800 rounded-full mix-blend-normal filter blur-3xl opacity-50 animate-blob animation-delay-2000">
+        </div>
+
+        <!-- Blob 3 -->
+        <div
+            class="absolute bottom-0 left-1/4 w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] bg-orange-400 rounded-full mix-blend-normal filter blur-3xl opacity-50 animate-blob animation-delay-4000">
+        </div>
+        <div class="relative overflow-y-auto max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <!-- En-tête principal -->
+             <!-- Header -->
+             <header class="p-4 flex items-center justify-between mb-4">
+                <div class="flex justify-between items-center w-full p-4">
+                  <!-- Logo  -->
+                  <div class="logo flex items-center">
+                    <img class="w-24 sm:w-32 h-auto" src="img/Logo.jpg" alt="Logo Graphic Studio">
+                  </div>
+                
+                  <!-- Desktop Menu -->
+                  <nav class="hidden md:flex items-center">
+                    <ul class="flex space-x-6 text-base font-medium">
+                      <li><a href="#hero" class="hover:text-orange-400 px-2 whitespace-nowrap">Accueil</a></li>
+                      <li><a href="#packs" class="hover:text-orange-400 px-2 whitespace-nowrap">Nos Packs</a></li>
+                      <li><a href="#temoignages" class="hover:text-orange-400 px-2 whitespace-nowrap">Témoignages</a></li>
+                      <li><a href="#contact" class="hover:text-orange-400 px-2 whitespace-nowrap">Contact</a></li>
+                      <li><a href="./services.html" class=" text-orange-400 px-2 whitespace-nowrap">Nos services</a></li>
+                    </ul>
+                    <a href="#contact"
+                      class="ml-6 bg-blue-500 text-white px-4 py-2 rounded font-normal text-base hover:bg-blue-600 whitespace-nowrap">
+                      Demande ton devis
+                    </a>
+                  </nav>
+                </div>
+                
+            
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                  <button id="mobile-menu-button" type="button" class="focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 8h16M4 16h16"></path>
+                    </svg>
+                  </button>
+                </div>
+              </header>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden px-4">
+                <ul class="pt-2 pb-3 space-y-1">
+                    <li>
+                        <a href="#hero"
+                            class="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-400">
+                            Accueil
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#packs"
+                            class="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-400">
+                            Nos Packs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#temoignages"
+                            class="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-400">
+                            Témoignages
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact"
+                            class="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-400">
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./services.html"
+                            class="block px-3 py-2  rounded-md text-base font-medium text-orange-400">
+                            Nos Services
+                        </a>
+                    </li>
+                </ul>
+                <a href="#contact"
+                    class="block bg-blue-500 text-white px-3 py-2 rounded-md text-base font-medium text-center hover:bg-blue-600 mb-4">
+                    Demande ton devis
+                </a>
+            </div>
+            <!-- Section Logo & Identité Visuelle -->
+            <section class="mb-16" aria-labelledby="logo-identity">
+                <div class="max-w-6xl mx-auto mb-10">
+                    <h2 id="logo-identity" class="text-4xl mx-4 font-bold mb-4 px-2 text-blue-500 text-start justify-start">
+                        Logo & Identité Visuelle
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+                    <!-- Carte Service -->
+                    <article class="rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                        <img src="./img/Logo conception.png" alt="Exemple de création de logo"
+                            class="w-full h-auto object-cover rounded-lg" loading="lazy" width="400" height="300">
+                        <div class="mt-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                Création de Logo Unique <span class="block text-blue-400 mt-1">À partir de 20$</span>
+                            </h3>
+                            <p class="text-gray-300 mb-4">
+                                Un logo professionnel, unique et parfaitement adapté à l'ADN de votre marque.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-3">
+                                <a href="#"
+                                     
+                                onclick="window.open('https://wa.me/243995342102?text=Je%20passe%20ma%20commande%20de%20mon%20Logo%20unique%20', '_blank')"
+                                    class="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+                                      
+                                      <img src="./img/Icon/whatsapp (3).png" alt="Icon de WhatsApp" class="w-5 h-5">
+                                    Commander
+                                </a>
+                                <a href="#"
+                                
+                                onclick="window.open('https://wa.me/243995342102?text=Puis-je%20avoir%20un%20devis%20personnalisé%20pour%20mon%20Logo%20:%20', '_blank')"
+                                    class="btn bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2 
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+                                    Demander un devis
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="bg-rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                        <img src="./img/Charte Graphique.png" alt="Exemple de création de logo"
+                            class="w-full h-auto object-cover rounded-lg" loading="lazy" width="400" height="300">
+                        <div class="mt-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                Charte Graphique Complète<span class="block text-blue-400 mt-1">À partir de 50$</span>
+                            </h3>
+                            <p class="text-gray-300 mb-4">
+                                Une identité visuelle complète avec couleurs, typographies et guide d'utilisation.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-3">
+                                <a href="#"
+                                    
+                                onclick="window.open('https://wa.me/243995342102?text=Besoin%20d une%20Charte%20graphique%20complete%20pour%20mon%20business', '_blank')"
+                                    class="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+                                      <img src="./img/Icon/whatsapp (3).png" alt="Icon de WhatsApp" class="w-5 h-5">
+                                    Commander
+                                </a>
+                                <a href="#"
+                                    
+                                onclick="window.open('https://wa.me/243995342102?text=Besoin%20d un%20devis%20pour%20la%20Charte%20graphique%20complete%20de%20mon%20business', '_blank')"
+                                    class="btn bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+                                    
+                                    Demander un devis
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                        <img src="./img/refonte.png" alt="Exemple de création de logo"
+                            class="w-full h-auto object-cover rounded-lg" loading="lazy" width="400" height="300">
+                        <div class="mt-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                Refonte de Logo<span class="block text-blue-400 mt-1">À partir de 15$</span>
+                            </h3>
+                            <p class="text-gray-300 mb-4">
+                                Modernisez votre logo pour mieux refléter votre image.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-3">
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=Je%20souhaite%20une%20refonte%20de%20mon%20logo%20avec%20un%20design%20moderne%20et%20impactant.', '_blank')"
+                                    class="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+                                      <img src="./img/Icon/whatsapp (3).png" alt="Icon de WhatsApp" class="w-5 h-5">
+                                    Commander
+                                </a>
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=Bonjour,%20j\'aimerais%20demander%20un%20devis%20pour%20la%20refonte%20de%20mon%20logo.', '_blank')"
+                                    class="btn bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+                       
+                                    Demander un devis
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Répéter la structure pour les autres services -->
+                    <!-- [Service Charte Graphique] -->
+                    <!-- [Service Refonte de Logo] -->
+                </div>
+
+            </section>
+
+
+            <!-- Section Design Réseaux Sociaux -->
+            <section class="mb-16" aria-labelledby="logo-identity">
+                <div class="max-w-6xl mx-auto mb-10">
+                    <h2 id="logo-identity" class="text-4xl font-bold mb-4 px-2 text-blue-500 text-start justify-start">
+                        Design pour Réseaux Sociaux
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+                    <!-- Carte Service -->
+                    <article class="rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                        <img src="./img/social media pack.png" alt="Exemple de création de logo"
+                            class="w-full h-auto object-cover rounded-lg" loading="lazy" width="400" height="300">
+                        <div class="mt-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                Pack Réseaux Sociaux (10 posts & stories) <span class="block text-blue-400 mt-1">À
+                                    partir de 35$</span>
+                            </h3>
+                            <p class="text-gray-300 mb-4">
+                                Un contenu attractif pour engager votre audience.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-3">
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=Je%20veux%20un%20pack%20de%2010%20posts%20et%20stories%20personnalisés%20pour%20mes%20réseaux%20sociaux.', '_blank')"
+                                    class="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+                                      <img src="./img/Icon/whatsapp (3).png" alt="Icon de WhatsApp" class="w-5 h-5">
+                                    Commander
+                                </a>
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=Bonjour,%20j\'aimerais%20demander%20un%20devis%20pour%20un%20pack%20de%2010%20posts%20et%20stories%20pour%20mes%20réseaux%20sociaux.', '_blank')"
+                                    class="btn bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+                                 
+                                    Demander un devis
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="bg-rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                        <img src="./img/banniere.png" alt="Exemple de création de logo"
+                            class="w-full h-auto object-cover rounded-lg" loading="lazy" width="400" height="300">
+                        <div class="mt-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                Bannière & Couverture Réseaux Sociaux<span class="block text-blue-400 mt-1">À partir de
+                                    10$</span>
+                            </h3>
+                            <p class="text-gray-300 mb-4">
+                                Une couverture impactante pour vos profils Facebook, LinkedIn, YouTube…
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-3">
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=J\'ai%20besoin%20d\'une%20bannière%20et%20couverture%20professionnelle%20pour%20mes%20réseaux%20sociaux.', '_blank')"
+
+                                    class="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+                                      <img src="./img/Icon/whatsapp (3).png" alt="Icon de WhatsApp" class="w-5 h-5">
+                                    Commander
+                                </a>
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=Bonjour,%20pouvez-vous%20me%20fournir%20un%20devis%20pour%20une%20bannière%20et%20une%20couverture%20réseaux%20sociaux?', '_blank')"
+
+                                    class="btn bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+                 
+                                    Demander un devis
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                        <img src="./img/miniature.png" alt="Exemple de création de logo"
+                            class="w-full h-auto object-cover rounded-lg" loading="lazy" width="400" height="300">
+                        <div class="mt-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                Thumbnail YouTube Personnalisé<span class="block text-blue-400 mt-1">À partir de
+                                    5$</span>
+                            </h3>
+                            <p class="text-gray-300 mb-4">
+                                Un visuel percutant pour booster vos vues.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-3 pt-13">
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=Je%20veux%20un%20thumbnail%20YouTube%20personnalisé%20et%20percutant%20pour%20ma%20vidéo.', '_blank')"
+
+                                    class="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+                                      <img src="./img/Icon/whatsapp (3).png" alt="Icon de WhatsApp" class="w-5 h-5">
+                                    Commander
+                                </a>
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=Bonjour,%20j\'aimerais%20savoir%20le%20tarif%20pour%20un%20thumbnail%20YouTube%20personnalisé.', '_blank')"
+
+                                    class="btn bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+
+                                    Demander un devis
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                        <img src="./img/cover.png" alt="Exemple de création de logo"
+                            class="w-full h-auto object-cover rounded-lg" loading="lazy" width="400" height="300">
+                        <div class="mt-6">
+                            <h3 class="text-2xl font-semibold mb-2">
+                                Cover d’album sur mesure<span class="block text-blue-400 mt-1">À partir de
+                                    10$</span>
+                            </h3>
+                            <p class="text-gray-300 mb-4">
+                                ✅ Un design de cover unique en haute qualité (300 DPI),<br>
+                                ✅ 2 révisions incluses pour affiner le design,<br>
+                                <span class="font-medium text-xl">Supplémentaires :</span> 
+🎬 Cover animée pour réseaux sociaux (+10$),<br>
+🎨 Mockups promotionnels (affiches, stories, bannières) (+10$)
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-3 pt-13">
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=Je%20souhaite%20une%20cover%20d\'album%20créative%20et%20sur%20mesure.', '_blank')"
+
+                                    class="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+                                      <img src="./img/Icon/whatsapp (3).png" alt="Icon de WhatsApp" class="w-5 h-5">
+                                    Commander
+                                </a>
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=Bonjour,%20je%20souhaite%20un%20devis%20pour%20une%20cover%20d\'album%20sur%20mesure.', '_blank')"
+
+                                    class="btn bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+                     
+                                    Demander un devis
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Répéter la structure pour les autres services -->
+                    <!-- [Service Charte Graphique] -->
+                    <!-- [Service Refonte de Logo] -->
+                </div>
+
+
+
+            </section>
+
+            <section class="mb-16" aria-labelledby="logo-identity">
+                <div class="max-w-6xl mx-auto mb-10">
+                    <h2 id="logo-identity" class="text-4xl font-bold mb-4 px-2 text-blue-500 text-start justify-start">
+                        Supports de Communication
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+                    <!-- Carte Service -->
+                    <article class="rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                        <img src="./img/Carte.png" alt="Exemple de création de logo"
+                            class="w-full h-auto object-cover rounded-lg" loading="lazy" width="400" height="300">
+                        <div class="mt-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                Carte de Visite Design <span class="block text-blue-400 mt-1">À partir de 10$</span>
+                            </h3>
+                            <p class="text-gray-300 mb-4">
+                                Une carte professionnelle qui laisse une bonne impression.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-3">
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=Je%20veux%20une%20carte%20de%20visite%20professionnelle%20et%20élégante.', '_blank')"
+
+                                    class="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+                                      <img src="./img/Icon/whatsapp (3).png" alt="Icon de WhatsApp" class="w-5 h-5">
+                                    Commander
+                                </a>
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=Bonjour,%20pouvez-vous%20m\'envoyer%20un%20devis%20pour%20la%20création%20de%20cartes%20de%20visite?', '_blank')"
+
+                                    class="btn bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+    
+                                    Demander un devis
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="bg-rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                        <img src="./img/flyer.png" alt="Exemple de création de logo"
+                            class="w-full h-auto object-cover rounded-lg" loading="lazy" width="400" height="300">
+                        <div class="mt-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                Flyer Publicitaire<span class="block text-blue-400 mt-1">À partir de 10$</span>
+                            </h3>
+                            <p class="text-gray-300 mb-4">
+                                Un flyer attractif pour promouvoir votre événement ou service.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-3">
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=Je%20veux%20un%20flyer%20publicitaire%20impactant%20pour%20mon%20business.', '_blank')"
+
+                                    class="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+                                      <img src="./img/Icon/whatsapp (3).png" alt="Icon de WhatsApp" class="w-5 h-5">
+                                    Commander
+                                </a>
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=Bonjour,%20je%20souhaite%20un%20devis%20pour%20un%20flyer%20publicitaire.', '_blank')"
+
+                                    class="btn bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+
+                                    Demander un devis
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                        <img src="./img/affiche publicitaire.png" alt="Exemple de création de logo"
+                            class="w-full h-auto object-cover rounded-lg" loading="lazy" width="400" height="300">
+                        <div class="mt-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                Affiche Publicitaire<span class="block text-blue-400 mt-1">À partir de 10$</span>
+                            </h3>
+                            <p class="text-gray-300 mb-4">
+                                Un design impactant pour attirer l’attention.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-3 pt-6">
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=J\'ai%20besoin%20d\'une%20affiche%20publicitaire%20percutante%20pour%20ma%20marque.', '_blank')"
+
+                                    class="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+                                      <img src="./img/Icon/whatsapp (3).png" alt="Icon de WhatsApp" class="w-5 h-5">
+                                    Commander
+                                </a>
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=Bonjour,%20j\'aimerais%20connaître%20le%20prix%20pour%20une%20affiche%20publicitaire.', '_blank')"
+
+                                    class="btn bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+
+                                    Demander un devis
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                        <img src="./img/catalogue.png" alt="Exemple de création de logo"
+                            class="w-full h-auto object-cover rounded-lg" loading="lazy" width="400" height="300">
+                        <div class="mt-6">
+                            <h3 class="text-xl font-semibold mb-2">
+                                Brochure & Catalogue<span class="block text-blue-400 mt-1">À partir de 30$</span>
+                            </h3>
+                            <p class="text-gray-300 mb-4">
+                                Un document structuré et esthétique pour présenter vos produits ou services.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-3">
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=Je%20souhaite%20une%20brochure%20ou%20un%20catalogue%20design%20pour%20présenter%20mes%20services.', '_blank')"
+
+                                    class="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+                                      <img src="./img/Icon/whatsapp (3).png" alt="Icon de WhatsApp" class="w-5 h-5">
+                                    Commander
+                                </a>
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=Bonjour,%20pouvez-vous%20me%20donner%20un%20devis%20pour%20une%20brochure%20ou%20un%20catalogue?', '_blank')"
+
+                                    class="btn bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+
+                                    Demander un devis
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+
+
+            </section>
+
+            <section class="mb-16" aria-labelledby="logo-identity">
+                <div class="max-w-6xl mx-auto mb-10">
+                    <h2 id="logo-identity" class="text-5xl text-blue-400 font-bold mb-4 px-2">
+                        Web Design & Développement
+                    </h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+                    <!-- Carte Service -->
+                    <article class="rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                        <h2 class="text-3xl font-bold mb-4"> Offre Starter - Présence en ligne simple</h2>
+                        <img src="./img/site01.png" alt="Exemple de création de logo"
+                            class="w-full h-auto object-cover rounded-lg" loading="lazy" width="400" height="300">
+                        <div class="mt-6">
+                            <h3 class="text-xl font-medium mb-2">
+                               Site vitrine simple Idéal pour les petites entreprises, freelances, artisans<span
+                                    class="block text-blue-400 mt-1">À partir de 150$</span>
+                            </h3>
+                            <p class="text-gray-300 mb-4 text-start">
+                                ✅ Site one-page (1 page)<br>
+                                ✅ Design moderne et responsive <br>
+                                ✅ Formulaire de contact<br>
+                                ✅ Liens vers les réseaux sociaux<br>
+                                ✅ Hébergement et nom de domaine non inclus <br>
+                                <span class=" text-gray-300"><span class="font-bold ">Option :</span>Ajout d’une page
+                                    supplémentaire (+30$/page)</span>
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-3">
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=Je%20veux%20un%20site%20vitrine%20simple%20pour%20mon%20business.', '_blank')"
+
+                                    class="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+                                      <img src="./img/Icon/whatsapp (3).png" alt="Icon de WhatsApp" class="w-5 h-5">                            
+                                    Commander
+                                </a>
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=Bonjour,%20je%20souhaite%20un%20devis%20pour%20la%20création%20d\'un%20site%20vitrine%20simple.', '_blank')"
+
+                                    class="btn bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-900">          
+                                    Demander un devis
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                        <h2 class="text-3xl font-bold mb-4">Offre Business - Site vitrine complet</h2>
+                        <img src="./img/site02.png" alt="Exemple de création de logo"
+                            class="w-full h-auto object-cover rounded-lg" loading="lazy" width="400" height="300">
+                        <div class="mt-6">
+                            <h3 class="text-xl font-medium mb-2">
+                                Idéal pour les PME, consultants, restaurants, professions libérales<span
+                                    class="block text-blue-400 mt-1">À partir de 550$</span>
+                            </h3>
+                            <p class="text-gray-300 mb-4 text-start">
+                                ✅ 3 à 5 pages (Accueil, Services, À propos, Contact, etc.)<br>
+                                ✅ Design sur-mesure et responsive<br>
+                                ✅ Intégration d’un blog (optionnel)<br>
+                                ✅ Formulaire de contact avancé<br>
+                                ✅ Optimisation SEO de base<br>
+                                ✅ Liens vers réseaux sociaux<br>
+                                ✅ Hébergement et nom de domaine non inclus<br>
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-3">
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=Je%20souhaite%20un%20site%20vitrine%20complet%20et%20professionnel.', '_blank')"
+
+                                    class="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+                                      <img src="./img/Icon/whatsapp (3).png" alt="Icon de WhatsApp" class="w-5 h-5">
+                                    Commander
+                                </a>
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=Bonjour,%20pouvez-vous%20m\'envoyer%20un%20devis%20pour%20un%20site%20vitrine%20complet?', '_blank')"
+
+                                    class="btn bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+                                    Demander un devis
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Répéter la structure pour les autres services -->
+                    <!-- [Service Charte Graphique] -->
+                    <!-- [Service Refonte de Logo] -->
+                </div>
+
+
+
+            </section>
+
+            <section class="mb-16" aria-labelledby="logo-identity">
+                <div class="max-w-7xl mx-auto mb-10">
+                    <h2 id="logo-identity" class="text-5xl text-blue-400 font-bold mb-4 px-2">
+                        OFFRE EXCLUSIVE POUR LES VENDEURS SUR WHATSAPP !
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-8">
+                    <!-- Carte Service -->
+                    <article class="rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                        <div class="font-medium text-xl mb-4">Tu vends sur WhatsApp mais tu veux plus de clients et plus de ventes ?<br>
+                            On crée ton site vitrine PRO sur mesure pour que ton business tourne 24h/24 !</div>
+                        <img src="./img/WhatsApp.png" alt="Exemple de création de logo"
+                            class="w-full h-auto object-cover rounded-lg" loading="lazy" width="400" height="300">
+                        <div class="mt-6">
+                            <h3 class="text-xl font-medium mb-2">
+                                Pack "Vendeur Pro" - Ton site vitrine WhatsApp<span
+                                    class="block text-blue-400 mt-1">À partir de 250$</span>
+                            </h3>
+                            <p class="text-gray-300 mb-4 text-start">
+                                ✅ Un site vitrine personnalisé avec un design adapté à ton business<br>
+                                ✅ Une boutique en ligne simple (sans paiement en ligne) pour exposer tes produits<br>
+                                ✅ Un bouton WhatsApp intégré pour discuter directement avec tes clients<br>
+                                ✅ Un formulaire de commande rapide pour faciliter la gestion des ventes<br>
+                                ✅ Un site responsive qui s’adapte à tous les écrans (mobile & PC)<br>
+                                ✅ Optimisation SEO de base pour être visible sur Google<br>
+                                ✅ Nom de domaine + hébergement OFFERTS pendant 3 mois 🎁<br>
+                            </p>
+                            <div class="flex flex-col sm:flex-row justify-center content-center gap-3">
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=Je%20veux%20un%20site%20vitrine%20WhatsApp%20pour%20faciliter%20les%20commandes.', '_blank')"
+
+                                    class="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+                                      <img src="./img/Icon/whatsapp (3).png" alt="Icon de WhatsApp" class="w-5 h-5">                
+                                    Commander
+                                </a>
+                                <a href="#"
+                                onclick="window.open('https://wa.me/243995342102?text=Bonjour,%20j\'aimerais%20savoir%20le%20tarif%20pour%20un%20site%20vitrine%20WhatsApp.', '_blank')"
+
+                                    class="btn bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2
+                                      transition-colors duration-200 text-center
+                                      focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-900">
+                            
+                                    Demander un devis
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- Répéter la structure pour les autres services -->
+                    <!-- [Service Charte Graphique] -->
+                    <!-- [Service Refonte de Logo] -->
+                </div>
+
+
+
+            </section>
+
+        </div>
+        <script>
+               const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        if (window.innerWidth <= 600) {
+            document.querySelector('img').style.width = '75%';
+        } else if (window.innerWidth <= 1024) {
+            document.querySelector('img').style.width = '50%';
+        } else if (window.innerWidth >= 1200) {
+            document.querySelector('img').style.width = '33%';
+        }
+        </script>
+</body>
+
+</html>
